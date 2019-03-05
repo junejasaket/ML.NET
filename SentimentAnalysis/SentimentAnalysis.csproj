@@ -6,12 +6,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="0.10.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="iris-data.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Update="Data\data.tsv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\test.tsv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
